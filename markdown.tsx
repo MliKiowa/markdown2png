@@ -443,10 +443,10 @@ export const BeautifulMarkdown = ({
         </div>
     );
 };
-
+export type FontConfig = Parameters<typeof satori>[1]["fonts"];
 export async function markdownToPngBuffer(
     markdown: string,
-    fonts: Parameters<typeof satori>[1]["fonts"],
+    fonts: FontConfig,
     width = 1000
 ): Promise<Buffer> {
     const parser = new MarkdownParser(markdown);
@@ -473,6 +473,7 @@ export async function markdownToPngBuffer(
     const pngData = resvg.render();
     return pngData.asPng();
 }
+
 // const md = `
 // # 🎨 你好，世界
 
@@ -528,7 +529,7 @@ export async function markdownToPngBuffer(
 //             return fs.readFileSync(font);
 //         } catch { }
 //     }
-//     return null; 
+//     return null;
 // };
 // const pngBuffer = await markdownToPngBuffer(md, [
 //     {
