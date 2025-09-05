@@ -1,0 +1,37 @@
+# 源代码文件
+*.tsx
+*.ts
+!dist/**/*.d.ts
+
+# 配置文件
+tsconfig.json
+.gitignore
+
+# 开发文件
+node_modules/
+.git/
+.github/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 测试文件
+test/
+tests/
+*.test.*
+*.spec.*
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp

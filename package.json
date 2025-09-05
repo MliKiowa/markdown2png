@@ -1,0 +1,56 @@
+{
+  "name": "markdown2png",
+  "version": "1.0.0",
+  "description": "一个强大的 Markdown 转 PNG 图片生成库，支持丰富的 Markdown 语法和美观的渲染效果",
+  "keywords": [
+    "markdown",
+    "png",
+    "image",
+    "convert",
+    "satori",
+    "resvg",
+    "svg",
+    "render",
+    "typescript"
+  ],
+  "homepage": "https://github.com/MliKiowa/markdown2png#readme",
+  "bugs": {
+    "url": "https://github.com/MliKiowa/markdown2png/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MliKiowa/markdown2png.git"
+  },
+  "license": "MIT",
+  "author": "Mlikiowa",
+  "type": "module",
+  "main": "./dist/markdown.js",
+  "types": "./dist/markdown.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/markdown.js",
+      "types": "./dist/markdown.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "check-build": "node scripts/check-build.js",
+    "prepublishOnly": "npm run build && npm run check-build",
+    "release": "node scripts/release.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.18.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12"
+  }
+}
