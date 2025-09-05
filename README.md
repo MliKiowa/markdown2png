@@ -2,6 +2,7 @@
 
 一个强大的 Markdown 转 PNG 图片生成库，支持丰富的 Markdown 语法和美观的渲染效果。
 
+![渲染示例](./beautiful_markdown.png)
 ## ✨ 特性
 - 🔥 **快速渲染**: 不依赖headless浏览器 渲染速度快
 - 📝 **完整的 Markdown 支持**: 标题、段落、引用、列表、代码块、链接等
